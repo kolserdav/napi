@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^3.1.0"
+  },
+  "scripts": {
+    "start": "nodemon node/dist/index",
+    "ts": "tsc -p . -w",
+    "ts:build": "tsc -p ."
+  }
+}
