@@ -5,16 +5,19 @@
       "cflags_cc!": [ "-fno-exceptions" ],
       "cflags": [ "-std=c++11" ],
       "include_dirs" : [
-        "/usr/include/opencv4",
+        "/usr/local/include/opencv4",
         "<!@(node -p \"require('node-addon-api').include\")"
       ],
-      "libraries": [ 
-        "/usr/lib/x86_64-linux-gnu/libopencv_core.so",
-        "/usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so",
-        "/usr/lib/x86_64-linux-gnu/libopencv_highgui.so"
+      "libraries": [
+        "/usr/local/lib/libopencv_core.so",
+        "/usr/local/lib/libopencv_imgcodecs.so",
+        "/usr/local/lib/libopencv_highgui.so"
       ],
       "target_name": "hello",
-      "sources": [ "src/hello.cpp" ],
+      "sources": [ 
+	"src/main.cpp", 
+	"src/modules/face.cpp" 
+      ],
       'defines': [ 'NAPI_DISABLE_CPP_EXCEPTIONS' ]
     }
   ]
