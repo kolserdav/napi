@@ -6,6 +6,8 @@
   "scripts": {
     "start": "nodemon node/dist/index",
     "ts": "tsc -p . -w",
-    "ts:build": "tsc -p ."
+    "ts:build": "tsc -p .",
+    "compile:js": "cmake-js compile -d node",
+    "compile": "cd build && cmake .. && cmake --build ."
   }
 }

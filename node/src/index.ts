@@ -1,4 +1,3 @@
-// @ts-ignore
-import lib from 'bindings';
-const module = lib('hello');
-console.log(module.sayHi);
+//@ts-ignore
+import lib from '../../build/Release/hello.node';
+console.log(lib.sayHi());
