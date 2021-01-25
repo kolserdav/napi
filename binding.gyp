@@ -9,14 +9,10 @@
         "<!@(node -p \"require('node-addon-api').include\")"
       ],
       "libraries": [
-        "/usr/local/lib/libopencv_core.so",
-        "/usr/local/lib/libopencv_imgcodecs.so",
-        "/usr/local/lib/libopencv_highgui.so"
       ],
       "target_name": "hello",
       "sources": [ 
-	"src/main.cpp", 
-	"src/modules/face.cpp" 
+	"src/main.cpp"
       ],
       'defines': [ 'NAPI_DISABLE_CPP_EXCEPTIONS' ]
     }

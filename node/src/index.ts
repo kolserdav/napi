@@ -1,4 +1,3 @@
 //@ts-ignore
-import lib from '../../build/Release/hello.node';
-console.log(lib.sayHi());
-console.log(lib.sayWorld());
+import lib from 'node-addon-api';
+console.log(lib.include);
