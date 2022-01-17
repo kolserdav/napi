@@ -5,7 +5,7 @@
       "cflags_cc!": [ "-fno-exceptions" ],
       "cflags": [ "-std=c++11" ],
       "include_dirs" : [
-        "/usr/local/include/opencv4",
+        "/usr/include/opencv4",
         "<!@(node -p \"require('node-addon-api').include\")"
       ],
       "libraries": [

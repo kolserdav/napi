@@ -1,6 +1,5 @@
 {
   "C_Cpp.errorSquiggles": "Disabled",
-  "clangd.arguments": ["-I./node_modules/node-addon-api"],
   "files.associations": {
     "cctype": "cpp",
     "clocale": "cpp",
