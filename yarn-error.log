@@ -1,0 +1,45 @@
+Arguments: 
+  /home/kol/.nvm/versions/node/v16.10.0/bin/node /home/kol/.nvm/versions/node/v16.10.0/bin/yarn ts
+
+PATH: 
+  /home/kol/.phpbrew/php/php-7.4.22/bin:/home/kol/Apps/google-cloud-sdk/bin:/home/kol/.nvm/versions/node/v16.10.0/bin:/home/kol/Apps/depot_tools:/home/kol/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/kol/.local/bin
+
+Yarn version: 
+  1.22.16
+
+Node version: 
+  16.10.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/kol/Projects/napi/package.json: Unexpected token } in JSON at position 213
+      at JSON.parse (<anonymous>)
+      at /home/kol/.nvm/versions/node/v16.10.0/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/home/kol/.nvm/versions/node/v16.10.0/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /home/kol/.nvm/versions/node/v16.10.0/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "dependencies": {
+      "bindings": "^1.5.0",
+      "node-addon-api": "^4.2.0"
+    },
+    "gypfile": true,
+    "scripts": {
+      "start": "nodemon node/dist/index",
+      "ts": "tsc -p . -w",
+      "ts:build": "tsc -p .",
+    },
+    "devDependencies": {
+      "typescript": "^4.5.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

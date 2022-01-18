@@ -1,0 +1,4 @@
+CompileFlags:
+  Add: 
+    - -I/home/user/Projects/napi/node_modules/node-addon-api # node-addon-api path
+    - -I/home/user/.nvm/versions/node/v16.10.0/include/node # node.js include path

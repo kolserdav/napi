@@ -1,0 +1,4 @@
+CompileFlags:
+  Add: 
+    - -I/home/kol/Projects/napi/node_modules/node-addon-api
+    - -I/home/kol/.nvm/versions/node/v16.10.0/include/node

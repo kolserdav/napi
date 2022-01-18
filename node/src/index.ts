@@ -1,3 +1,3 @@
-//@ts-ignore
-import lib from 'node-addon-api';
-console.log(lib.include);
+import addon from 'bindings';
+const hello = addon('hello')
+console.log(hello.sayHi())
