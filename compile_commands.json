@@ -1,6 +1,0 @@
-[
-    { "directory": "~/llvm/build",
-      "command": "/usr/bin/clang++ -Iinclude  -I/home/kol/Projects/napi/node_modules/node-addon-api -DSOMEDEF=\"With spaces, quotes and \\-es.\" -c -o file.o src/main.cpp",
-      "file": "src/main.cpp" }
-  ]
-  

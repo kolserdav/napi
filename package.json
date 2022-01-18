@@ -1,13 +1,15 @@
 {
   "dependencies": {
     "bindings": "^1.5.0",
-    "node-addon-api": "^3.1.0"
+    "node-addon-api": "^4.2.0"
   },
+  "gypfile": true,
   "scripts": {
     "start": "nodemon node/dist/index",
     "ts": "tsc -p . -w",
-    "ts:build": "tsc -p .",
-    "compile:js": "cmake-js compile -d node",
-    "compile": "cd build && cmake .. && cmake --build ."
+    "ts:build": "tsc -p ."
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4"
   }
 }
