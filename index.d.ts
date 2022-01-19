@@ -1,5 +1,5 @@
 interface Module {
-  sayHi: () => void
+  sayHi: (id: number) => void
 }
 
 declare module 'bindings' {

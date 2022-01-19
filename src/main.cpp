@@ -4,7 +4,8 @@ using namespace std;
 
 Napi::String SayHi(const Napi::CallbackInfo &info) {
   Napi::Env env = info.Env();
-  cout << "Hi22!" << endl;
+  double arg0 = info[0].As<Napi::Number>().DoubleValue();
+  cout << arg0 << endl;
   return Napi::String::New(env, "Hi2");
 }
 
